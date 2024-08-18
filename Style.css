@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #dad5d5;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hover-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #95d4f3;
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.header-image:hover .hover-text {
+    opacity: 1;
+}
+
+.profile-info {
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fff; 
+}
+
+.job-description {
+    font-size: 1.2em;
+    color: #187fde;
+}
+
+.projects {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    color: #065e98;
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    max-width: 600px;
+    text-align: center;
+}
+
+.project-info h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.project-info p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.project-info a {
+    color: #0457a5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    color: #0ca2ee;
+    text-decoration: underline;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.gallery-item {
+    flex: 1 1 200px; /* Adjust the size and allow items to grow */
+    max-width: 300px; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
